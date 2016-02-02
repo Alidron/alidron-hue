@@ -1,0 +1,7 @@
+.dockerignore
+.gitlab-ci.yml
+Dockerfile
+Dockerfile-rpi
+Makefile
+README.md
+CONTRIBUTING.md

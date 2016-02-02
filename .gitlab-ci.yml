@@ -1,0 +1,25 @@
+stages:
+    - build
+    - deploy
+    
+#build-rpi:
+#    stage: build
+#    tags:
+#        - rpi
+#    script:
+#        - make build-rpi
+        
+#deploy-rpi:
+#    stage: deploy
+#    tags:
+#        - rpi
+#    script:
+#        - make push-rpi
+        
+#deploy-priv-rpi:
+#    stage: deploy
+#    tags:
+#        - rpi
+#    script:
+#        - make push-rpi-priv
+        
