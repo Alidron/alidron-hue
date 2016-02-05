@@ -99,6 +99,8 @@ class AlidronHue(object):
         sys.exit(0)
 
 def find_hue_bridges_ip(timeout=1.0):
+    # uPnP discovery method with SSDP
+    # Could alternatively use portal discovery method (https://www.meethue.com/api/nupnp), see https://github.com/allanbunch/beautifulhue/pull/2/files#diff-bc9a9a6290c43731b439f5a4fdcc357bR60
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
     sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     sock.setsockopt(socket.IPPROTO_IP, socket.IP_MULTICAST_TTL, 2)
